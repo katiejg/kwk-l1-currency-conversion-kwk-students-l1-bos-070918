@@ -57,13 +57,13 @@ when 3
 when 4
   puts usd_to_aud(amount)
 when 5
-  #code here
+  puts eur_to_usd(amount)
 when 6
-  #code here
+  puts jpy_to_usd(amount)
 when 7
-  #code here
+  puts gbp_to_usd(amount)
 when 8
-  #code here
+  puts aud_to_usd(amount)
 else
   puts "Invalid input, exiting..."
 end
