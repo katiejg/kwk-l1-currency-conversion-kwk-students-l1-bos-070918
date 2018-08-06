@@ -49,13 +49,13 @@ choice = gets.chomp().to_i
  
 case choice
 when 1
-  puts (amount)
+  puts usd_to_eur(amount)
 when 2
-  #code here
+  puts usd_to_jpy(amount)
 when 3
-  #code here
+  puts usd_to_gbp(amount)
 when 4
-  #code here
+  puts usd_to_aud(amount)
 when 5
   #code here
 when 6
