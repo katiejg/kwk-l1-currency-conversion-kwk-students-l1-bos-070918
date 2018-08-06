@@ -32,34 +32,38 @@ def aud_to_usd(aud)
   aud  / 1.5
 end
 
-  puts "How much money do you want to convert?"
-
-  puts "Enter the conversion number:"
-  puts "1. USD to EUR"
-  puts "2. USD to JPY"
-  puts "3. USD to GBP"
-  puts "4. USD to AUD"
-  puts "5. EUR to USD"
-  puts "6. JPY to USD"
-  puts "7. GBP to USD"
-  puts "8. AUD to USD"
-  
-  if choice == 1 
-    puts usd_to_eur(amount)
-    elsif choice == 2 
-    puts usd_to_jpy(amount)
-    elsif choice == 3 
-    puts usd_to_gbp(amount)
-    elsif choice == 4
-    puts usd_to_aud(amount)
-    elsif choice == 5
-    puts eur_to_usd(amount)
-    elsif choice == 6
-    puts jpy_to_usd(amount)
-    elsif choice == 7
-    puts gbp_to_usd(amount)
-    elsif choice == 8
-    puts aud_to_usd(amount)
-  else
-    puts "Sorry, that is not a valid choice. Please start over and input a number."
-  end
+puts "How much money do you want to convert?"
+amount = gets.chomp().to_i
+ 
+puts "Pick from the following menu:"
+puts "1. USD to EUR"
+puts "2. USD to JPY"
+puts "3. USD to GBP"
+puts "4. USD to AUD"
+puts "5. EUR to USD"
+puts "6. JPY to USD"
+puts "7. GBP to USD"
+puts "8. AUD to USD"
+ 
+choice = gets.chomp().to_i
+ 
+case choice
+when 1
+  puts (amount)
+when 2
+  #code here
+when 3
+  #code here
+when 4
+  #code here
+when 5
+  #code here
+when 6
+  #code here
+when 7
+  #code here
+when 8
+  #code here
+else
+  puts "Invalid input, exiting..."
+end
